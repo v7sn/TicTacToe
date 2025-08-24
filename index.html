@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>XO العربية</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+	<div class="app">
+		<header class="top">
+			<h1>XO</h1>
+			<div class="score">
+				<div><span>فوزك</span><strong id="youWins">0</strong></div>
+				<div><span>فوز الذكاء</span><strong id="aiWins">0</strong></div>
+				<div><span>تعادلات</span><strong id="draws">0</strong></div>
+			</div>
+		</header>
+		<main>
+			<div id="status" class="status">اختر الرمز</div>
+			<div id="board" class="board"></div>
+			<div class="controls">
+				<button id="newGame">لعبة جديدة</button>
+				<button id="resetScore">تصفير النتائج</button>
+			</div>
+		</main>
+	</div>
+	<div id="choose" class="choose">
+		<div class="card">
+			<h2>اختر رمزك</h2>
+			<div class="choices">
+				<button data-symbol="X">X</button>
+				<button data-symbol="O">O</button>
+			</div>
+		</div>
+	</div>
+	<div id="line" class="win-line"></div>
+	<script src="scripts.js"></script>
+</body>
+
+</html>
